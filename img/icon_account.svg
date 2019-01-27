@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>SignIn</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="10" cy="10" r="10"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-1216.000000, -29.000000)">
+            <g id="Group-8" transform="translate(40.000000, 20.000000)">
+                <g id="Group" transform="translate(1176.000000, 9.000000)">
+                    <g id="Group-2">
+                        <g id="SignIn-Black">
+                            <g id="Group-4">
+                                <g id="Group-3">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <g id="Mask" fill-rule="nonzero"></g>
+                                    <g mask="url(#mask-2)" fill-rule="nonzero" id="Oval" stroke="#333333" stroke-width="1.5">
+                                        <g transform="translate(3.636364, 3.636364)">
+                                            <circle cx="6.36363636" cy="3.52941176" r="2.77941176"></circle>
+                                            <path d="M11.9772727,12.7272727 C11.9772727,9.62694697 9.46396212,7.11363636 6.36363636,7.11363636 C3.26331061,7.11363636 0.75,9.62694697 0.75,12.7272727 C0.75,15.5668348 3.15854539,17.3844336 6.36302165,17.3818071 C9.56631556,17.3791817 11.9772727,15.5584455 11.9772727,12.7272727 Z"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <circle id="Oval" stroke="#333333" stroke-width="1.5" fill-rule="nonzero" cx="10" cy="10" r="9.25"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

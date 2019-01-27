@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="kr" prefix="og: http://ogp.me/ns#">
+	<head>
+			<meta charset="utf-8">
+			<meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+			<title>CodeInsight</title>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script type="text/javascript" src="js/ci_js.js"></script>
+			<link rel="stylesheet" href="css/ci_style.css">
+		</head>
+	<body>
+		<!-- Modal BG S -->
+		<div class="modal_bg desktop"></div>
+		<div class="modal_bg mobile"></div>
+		<!-- Modal BG E -->
+		<header class="clearfix">
+			<div class="container clearfix">
+				<!-- Logo S -->
+				<div class="logo"></div>
+				<!-- Logo E -->
+				<!-- Mobile Hamburger Menu S -->
+				<nav class="fr nav_mobile">
+					<div class="inline fr pt_5 hamburger"><img src="img/menu.svg"></div>
+					<div class="inline fr pt_5 h_close hide"><img src="img/close.svg"></div>
+				</nav>
+				<!-- Mobile Hamburger Menu E -->
+				<nav class="fr nav_desktop p_relative">
+					<!-- After Sign In S -->
+					<div class="inline pr_20 hide signin_menu">
+						<div><a href="#"><span><img src="img/icon_dashboard.svg"></span>대시보드</a></div>
+						<div><a href="#"><span><img src="img/icon_analyze.svg"></span>영향도 분석</a></div>
+						<div><a href="#"><span><img src="img/icon_output.svg"></span>산출물</a></div>
+						<div><a href="#"><span><img src="img/icon_report.svg"></span>이슈분석</a></div>
+						<div><a href="#"><span><img src="img/icon_admin.svg"></span>관리자</a></div>
+					</div>
+					<!-- After Sign In E -->
+					<!-- Global Menu S -->
+					<div class="inline p_relative global_menu">
+						<div id="signin"><span><img src="img/icon_account.svg"></span>계정</div>
+						<div><a href="#"><span><img src="img/icon_question.svg"></span>도움말</a></div>
+					</div>
+					<!-- Global Menu E -->
+					<!-- Sign In Popup S -->
+					<div class="modal_popup close" id="signin_popup">
+						<span class="modal_close"><img src="img/modal_close.svg"></span>
+						<p class="t_blue t_bold t_title pb_10">Login</p>
+						<!-- Error MSG S -->
+						<div class="ws_100 clearfix inline bg_red t_white pa_10 txc t_small mb_20 br_5"> 로그인 실패! 아이디/비밀번호 확인 후 다시 로그인 하시기 바랍니다.</div>
+						<!-- Error MSG E -->
+
+						<!-- Input Field S -->
+						<fieldset>
+							<div>
+								<label>아이디</label>
+								<input type="email" class="ws_100">
+							</div>
+							<div>
+								<label>비밀번호</label>
+								<input type="password" class="ws_100">
+							</div>
+						</fieldset>
+						<!-- Input Field E -->
+
+						<!-- CTA and Checkbox S -->
+						<div class="col_m_6_of_12 fl pt_10"><input type="checkbox"> <span class="pl_5">아이디 기억하기</span></div>
+						<div class="col_m_6_of_12 fr txr"><button class="brand_blue t_white ws_100">로그인</button></div>
+						<!-- CTA and Checkbox E -->
+
+						<div class="ws_100 clearfix inline pt_30 t_small">
+							<span><a href="#" class="underline">비밀번호 잊으셨나요?</a></span>
+							<span class="split">&nbsp;</span>
+							<span><a href="#" class="underline">계정이 없으신가요?</a></span>
+						</div>
+					</div>
+					<!-- Sign In Popup E -->
+				</nav>
+			</div>
+
+		</header>
+		<!-- Mobile Navigation S -->
+
+		<div class="mobile_menu clearfix">
+			<!-- After Sign In S -->
+			<div class="col_s_10_of_10">
+				<div><a href="#"><span><img src="img/icon_dashboard.svg"></span>대시보드</a></div>
+				<div><a href="#"><span><img src="img/icon_analyze.svg"></span>영향도 분석</a></div>
+				<div><a href="#"><span><img src="img/icon_output.svg"></span>산출물</a></div>
+				<div><a href="#"><span><img src="img/icon_report.svg"></span>이슈분석</a></div>
+				<div><a href="#"><span><img src="img/icon_admin.svg"></span>관리자</a></div>
+			</div>
+			<!-- After Sign In E -->
+			<!-- Global Menu S -->
+			<div class="col_s_10_of_10">
+				<div><a href="#"><span><img src="img/icon_account.svg"></span>계정</a></div>
+				<div><a href="#"><span><img src="img/icon_question.svg"></span>도움말</a></div>
+			</div>
+			<!-- Global Menu E -->
+		</div>
+		<!-- Mobile Navigation E -->
+		<div class="wrapper">
+			<!-- Background Gray Line S -->
+			<div class="bg_line">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<!-- Background Gray Line E -->
+			<main>
+				<div class="content">
+					<div class="title_bar light_blue"></div>
+					<div class="title">
+						<p class="t_dark_blue">Innovative<br/>& accurate</p>
+						<p class="t_blue">- analytic<br/>system</p>
+					</div>
+					<div class="content_container brand_blue">
+						<!-- Welcome Message S -->
+						<div class="t_white col_s_9_of_10 col_m_10_of_12 fr clearfix">
+							<!-- After Sign In Welcome MSG S-->
+							<p class="t_light_blue pb_20 clearfix">Elisha님이 로그인 하셨습니다.</p>
+							<!-- After Sign In Welcome MSG E-->
+							<p class="t_heavy pb_10">Welcome to CodeInsight</p>
+							<p class="t_title pt_20">CodeInsight는 소스코드의 품질을 분석하여 다양한 결과를 Report합니다.</p>
+							<!-- List S -->
+							<div class="list pt_20 pb_10 clearfix">
+								<div><span class="t_light_blue pr_5 fl">01. </span><span class="fl col_s_8_of_10">어플리케이션 구간 결손 정보 (UI-Controller-ORM-DB)</span></div>
+								<div><span class="t_light_blue pr_5 fl">02. </span><span class="fl col_s_8_of_10">패키지, 클라스, 메서드, 쿼리 복잡도 정보 (예: UI 이벤트 / Java Method 피호출)</span></div>
+								<div><span class="t_light_blue pr_5 fl">03. </span><span class="fl col_s_8_of_10">어플리케이션 소스 품질 점검</span></div>
+								<div><span class="t_light_blue pr_5 fl">04. </span><span class="fl col_s_8_of_10">잠재적 위험 소스 점검 등</span></div>
+							</div>
+							<!-- List E -->
+							<div class="clearfix pt_20">기타 자세한 사항은 <a href="http://www.polsoft.co.kr" target="_blank"><span class="t_light_blue">http://www.polsoft.co.kr</span></a>을 참조하세요.</div>
+						</div>
+						<!-- Welcome Message E -->
+					</div>
+				</div>
+				<div class="full_bg dark_blue"></div>
+			</main>
+		</div>
+		<footer>© <script>document.write((new Date()).getFullYear());</script> PolSoft,inc. All Rights Reserved. </footer>
+	</body>
+</html>
