@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="kr" prefix="og: http://ogp.me/ns#">
+	<head>
+			<meta charset="utf-8">
+			<meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+			<title>CodeInsight</title>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script type="text/javascript" src="js/ci_js.js"></script>
+			<link rel="stylesheet" href="css/ci_style.css">
+		</head>
+	<body>
+		<!-- Modal BG S -->
+		<div class="modal_bg desktop"></div>
+		<div class="modal_bg mobile"></div>
+		<!-- Modal BG E -->
+		<header class="clearfix">
+			<div class="container clearfix">
+				<!-- Logo S -->
+				<div class="logo"></div>
+				<!-- Logo E -->
+				<!-- Mobile Hamburger Menu S -->
+				<nav class="fr nav_mobile">
+					<div class="inline fr pt_5 hamburger"><img src="img/menu.svg"></div>
+					<div class="inline fr pt_5 h_close hide"><img src="img/close.svg"></div>
+				</nav>
+				<!-- Mobile Hamburger Menu E -->
+				<nav class="fr nav_desktop p_relative">
+					<!-- After Sign In S -->
+					<div class="inline pr_20 hide signin_menu">
+						<div><a href="#"><span><img src="img/icon_dashboard.svg"></span>대시보드</a></div>
+						<div><a href="#"><span><img src="img/icon_analyze.svg"></span>영향도 분석</a></div>
+						<div><a href="#"><span><img src="img/icon_output.svg"></span>산출물</a></div>
+						<div><a href="#"><span><img src="img/icon_report.svg"></span>이슈분석</a></div>
+						<div><a href="#"><span><img src="img/icon_admin.svg"></span>관리자</a></div>
+					</div>
+					<!-- After Sign In E -->
+					<!-- Global Menu S -->
+					<div class="inline p_relative global_menu">
+						<div id="signin" class="cursor"><span><img src="img/icon_account.svg"></span>계정</div>
+						<div><a href="#"><span><img src="img/icon_question.svg"></span>도움말</a></div>
+					</div>
+					<!-- Global Menu E -->
+					<!-- Sign In Popup S -->
+					<div class="modal_popup close" id="signin_popup">
+						<span class="modal_close cursor"><img src="img/modal_close.svg"></span>
+						<p class="t_blue t_bold t_title pb_10">Login</p>
+						<!-- Error MSG S -->
+						<div class="ws_100 clearfix inline bg_red t_white pa_10 txc t_small mb_20 br_5"> 로그인 실패! 아이디/비밀번호 확인 후 다시 로그인 하시기 바랍니다.</div>
+						<!-- Error MSG E -->
+
+						<!-- Input Field S -->
+						<fieldset>
+							<div>
+								<label>아이디</label>
+								<input type="email" class="ws_100">
+							</div>
+							<div>
+								<label>비밀번호</label>
+								<input type="password" class="ws_100">
+							</div>
+						</fieldset>
+						<!-- Input Field E -->
+
+						<!-- CTA and Checkbox S -->
+						<div class="col_m_6_of_12 fl pt_10"><input type="checkbox"> <span class="pl_5">아이디 기억하기</span></div>
+						<div class="col_m_6_of_12 fr txr"><button class="brand_blue t_white ws_100">로그인</button></div>
+						<!-- CTA and Checkbox E -->
+
+						<div class="ws_100 clearfix inline pt_30 t_small">
+							<span><a href="#" class="underline">비밀번호 잊으셨나요?</a></span>
+							<span class="split">&nbsp;</span>
+							<span><a href="#" class="underline">계정이 없으신가요?</a></span>
+						</div>
+					</div>
+					<!-- Sign In Popup E -->
+				</nav>
+			</div>
+
+		</header>
+		<!-- Mobile Navigation S -->
+
+		<div class="mobile_menu clearfix">
+			<!-- After Sign In S -->
+			<div class="col_s_10_of_10">
+				<div><a href="#"><span><img src="img/icon_dashboard.svg"></span>대시보드</a></div>
+				<div><a href="#"><span><img src="img/icon_analyze.svg"></span>영향도 분석</a></div>
+				<div><a href="#"><span><img src="img/icon_output.svg"></span>산출물</a></div>
+				<div><a href="#"><span><img src="img/icon_report.svg"></span>이슈분석</a></div>
+				<div><a href="#"><span><img src="img/icon_admin.svg"></span>관리자</a></div>
+			</div>
+			<!-- After Sign In E -->
+			<!-- Global Menu S -->
+			<div class="col_s_10_of_10">
+				<div><a href="#"><span><img src="img/icon_account.svg"></span>계정</a></div>
+				<div><a href="#"><span><img src="img/icon_question.svg"></span>도움말</a></div>
+			</div>
+			<!-- Global Menu E -->
+		</div>
+		<!-- Mobile Navigation E -->
+		<div class="wrapper scroll">
+			<main>
+				<div class="col_s_10_of_10 col_m_12_of_12 fc clearfix pt_30">
+					<!-- Lose UI S -->
+					<div class="col_s_10_of_10 col_m_6_of_12 fl pb_50">
+						<div class="col_s_9_of_10 col_m_9_of_12 col_l_8_of_16 fc pb_30">
+							<!-- Dashboard Title S -->
+							<div class="ws_100 clearfix pb_10 bb_light_blue">
+								<div class="col_s_6_of_10"><span class="t_heavy">UI 결손</span></div>
+								<div class="col_s_4_of_10 txr pt_5 t_small"><a href="#">Data <img src="img/arrow_right.svg" class="pl_5"></a></div>
+							</div>
+							<!-- Dashboard Title E -->
+							<!-- Graph S -->
+							<div class="ws_100 clearfix pt_20 graph">
+								<div class="col_s_2_of_10">
+									<div class="col_s_6_of_10 txr flex flex_center pr_20">
+										<div class="flex_top">100</div>
+										<div>50</div>
+										<div class="flex_bottom">0</div>
+									</div>
+									<div class="col_s_3_of_10 graphline">
+										<div class="flex">
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+										</div>
+									</div>
+								</div>
+								<div class="col_s_8_of_10 graphbar">
+									<div class="col_s_5_of_10">
+										<div class="flex brand_blue p_relative">
+											<div class="bg_red graph_result" style="height:1%"></div>
+										</div>
+									</div>
+									<div class="col_s_5_of_10">
+										<div class="flex brand_blue p_relative">
+											<div class="bg_red graph_result" style="height:5%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Graph E -->
+							<div class="col_s_8_of_10 fr pb_30">
+								<div class="col_s_5_of_10">
+									<div class="ws_100 pt_20 txc clearfix lh_15">
+										<ul>
+											<li class="t_blue t_bold">중복포함</li>
+											<li>정상 : 1,456건</li>
+											<li>결손 : 19건</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col_s_5_of_10">
+									<div class="ws_100 pt_20 txc clearfix lh_15">
+										<ul>
+											<li class="t_blue t_bold">중복포함</li>
+											<li>정상 : 1,456건</li>
+											<li>결손 : 19건</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Lose UI E -->
+					<!-- Lose Controller S -->
+					<div class="col_s_10_of_10 col_m_6_of_12 fr pb_50">
+						<div class="col_s_9_of_10 col_m_9_of_12 col_l_8_of_16 fc pb_30">
+							<!-- Dashboard Title S -->
+							<div class="ws_100 clearfix pb_10 bb_green">
+								<div class="col_s_6_of_10"><span class="t_heavy">Controller 결손</span></div>
+								<div class="col_s_4_of_10 txr pt_5 t_small"><a href="#">Data <img src="img/arrow_right.svg" class="pl_5"></a></div>
+							</div>
+							<!-- Dashboard Title E -->
+							<!-- Graph S -->
+							<div class="ws_100 clearfix pt_20 graph">
+								<div class="col_s_2_of_10">
+									<div class="col_s_6_of_10 txr flex flex_center pr_20">
+										<div class="flex_top">100</div>
+										<div>50</div>
+										<div class="flex_bottom">0</div>
+									</div>
+									<div class="col_s_3_of_10 graphline">
+										<div class="flex">
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+										</div>
+									</div>
+								</div>
+								<div class="col_s_8_of_10 graphbar">
+									<div class="col_s_10_of_10">
+										<div class="flex bg_green p_relative">
+											<div class="bg_red graph_result" style="height:50%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Graph E -->
+							<div class="col_s_8_of_10 fr pb_30">
+								<div class="col_s_10_of_10">
+									<div class="ws_100 pt_20 txc clearfix lh_15">
+										<ul>
+											<li class="t_green t_bold">JAVA</li>
+											<li>정상 : 1,456건</li>
+											<li>결손 : 19건</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Lose Controller E -->
+					<!-- Lose ORM S -->
+					<div class="col_s_10_of_10 col_m_6_of_12 fl pb_50">
+						<div class="col_s_9_of_10 col_m_9_of_12 col_l_8_of_16 fc pb_30">
+							<!-- Dashboard Title S -->
+							<div class="ws_100 clearfix pb_10 bb_light_green">
+								<div class="col_s_6_of_10"><span class="t_heavy">ORM 결손</span></div>
+								<div class="col_s_4_of_10 txr pt_5 t_small"><a href="#">Java <img src="img/arrow_right.svg" class="pl_5 pr_20"></a> <a href="#">Table <img src="img/arrow_right.svg" class="pl_5"></a></div>
+							</div>
+							<!-- Dashboard Title E -->
+							<!-- Graph S -->
+							<div class="ws_100 clearfix pt_20 graph">
+								<div class="col_s_2_of_10">
+									<div class="col_s_6_of_10 txr flex flex_center pr_20">
+										<div class="flex_top">100</div>
+										<div>50</div>
+										<div class="flex_bottom">0</div>
+									</div>
+									<div class="col_s_3_of_10 graphline">
+										<div class="flex">
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+										</div>
+									</div>
+								</div>
+								<div class="col_s_8_of_10 graphbar">
+									<div class="col_s_5_of_10">
+										<div class="flex bg_light_green p_relative">
+											<div class="bg_red graph_result" style="height:1%"></div>
+										</div>
+									</div>
+									<div class="col_s_5_of_10">
+										<div class="flex bg_light_green p_relative">
+											<div class="bg_red graph_result" style="height:5%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Graph E -->
+							<div class="col_s_8_of_10 fr pb_30">
+								<div class="col_s_5_of_10">
+									<div class="ws_100 pt_20 txc clearfix lh_15">
+										<ul>
+											<li class="t_light_green t_bold">JAVA</li>
+											<li>정상 : 1,456건</li>
+											<li>결손 : 19건</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col_s_5_of_10">
+									<div class="ws_100 pt_20 txc clearfix lh_15">
+										<ul>
+											<li class="t_light_green t_bold">TABLE</li>
+											<li>정상 : 1,456건</li>
+											<li>결손 : 19건</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Lose ORM E -->
+					<!-- Lose DB S -->
+					<div class="col_s_10_of_10 col_m_6_of_12 fl pb_50">
+						<div class="col_s_9_of_10 col_m_9_of_12 col_l_8_of_16 fc pb_30">
+							<!-- Dashboard Title S -->
+							<div class="ws_100 clearfix pb_10 bb_pink">
+								<div class="col_s_6_of_10"><span class="t_heavy">DB 결손</span></div>
+								<div class="col_s_4_of_10 txr pt_5 t_small"><a href="#">ORM <img src="img/arrow_right.svg" class="pl_5 pr_20"></a> <a href="#">Record <img src="img/arrow_right.svg" class="pl_5"></a></div>
+							</div>
+							<!-- Dashboard Title E -->
+							<!-- Graph S -->
+							<div class="ws_100 clearfix pt_20 graph">
+								<div class="col_s_2_of_10">
+									<div class="col_s_6_of_10 txr flex flex_center pr_20">
+										<div class="flex_top">100</div>
+										<div>50</div>
+										<div class="flex_bottom">0</div>
+									</div>
+									<div class="col_s_3_of_10 graphline">
+										<div class="flex">
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+										</div>
+									</div>
+								</div>
+								<div class="col_s_8_of_10 graphbar">
+									<div class="col_s_5_of_10">
+										<div class="flex bg_pink p_relative">
+											<div class="bg_red graph_result" style="height:14%"></div>
+										</div>
+									</div>
+									<div class="col_s_5_of_10">
+										<div class="flex bg_pink p_relative">
+											<div class="bg_red graph_result" style="height:5%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Graph E -->
+							<div class="col_s_8_of_10 fr pb_30">
+								<div class="col_s_5_of_10">
+									<div class="ws_100 pt_20 txc clearfix lh_15">
+										<ul>
+											<li class="t_pink t_bold">JAVA</li>
+											<li>정상 : 1,456건</li>
+											<li>결손 : 19건</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col_s_5_of_10">
+									<div class="ws_100 pt_20 txc clearfix lh_15">
+										<ul>
+											<li class="t_pink t_bold">TABLE</li>
+											<li>정상 : 1,456건</li>
+											<li>결손 : 19건</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Lose DB E -->
+					
+				</div>
+			</main>
+		</div>
+		<footer>© <script>document.write((new Date()).getFullYear());</script> PolSoft,inc. All Rights Reserved. </footer>
+	</body>
+</html>
