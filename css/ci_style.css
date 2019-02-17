@@ -465,7 +465,9 @@ img {
 ul li {
   list-style: none;
 }
-
+.cursor {
+  cursor: pointer;
+}
 /* ============================== */
 /* Layout Code                    */
 /*================================*/
@@ -546,6 +548,9 @@ div[class*="col_"] {
   float: none;
   margin: auto;
   overflow: hidden;
+}
+.wrapper.scroll {
+  overflow-y: auto !important;
 }
 
 .top_underline {
@@ -647,6 +652,12 @@ div[class*="col_"] {
 .pt_30 {
   padding-top: 30px;
 }
+.pb_30 {
+  padding-bottom: 30px;
+}
+.pb_50 {
+  padding-bottom: 50px;
+}
 .mb_20 {
   margin-bottom: 20px;
 }
@@ -665,13 +676,33 @@ div[class*="col_"] {
 .t_blue {
   color:#1C5393;
 }
+.t_green {
+  color: #65BB73;
+}
+.t_light_green {
+  color: #87D7D4;
+}
+.t_pink {
+  color: #E19DB1;
+}
 /* Border Color Code */
 .split {
   border-right:1px solid #aaa;
   padding-left: 10px;
   margin-right: 10px;
 }
-
+.bb_light_blue {
+  border-bottom: 3px solid #9DBCE1;
+}
+.bb_green {
+  border-bottom: 3px solid #65BB73;
+}
+.bb_light_green {
+  border-bottom: 3px solid #87D7D4;
+}
+.bb_pink {
+  border-bottom: 3px solid #E19DB1;
+}
 /* Font Size Code */
 .t_heavy {
   font-size: 1.6em;
@@ -687,7 +718,12 @@ div[class*="col_"] {
 .t_small {
   font-size: .9em;
 }
-
+.dash_title {
+  font-size: 11px;
+}
+.lh_15 {
+  line-height: 150%;
+}
 /* ============================== */
 /* Form Code                      */
 /*================================*/
@@ -816,6 +852,16 @@ main {
 .bg_red {
   background: #94070A;
 }
+.bg_green {
+  background: #65BB73;
+}
+.bg_light_green {
+  background:  #87D7D4;
+}
+.bg_pink {
+  background: #E19DB1;
+}
+
 .full_bg{
   height: 100%;
   width: 80%;
@@ -852,7 +898,9 @@ main {
   height: 100%;
   border-right: 1px solid #eee;
 }
-
+.bg_line > div:last-child {
+  border-right: 0;
+}
 .list > div {
   padding-bottom: 10px;
   display: block;
@@ -950,6 +998,64 @@ footer {
   width: 100%;
 }
 
+/* ============================== */
+/* Graph Code                     */
+/*================================*/
+.graph {
+  height: 30vh;
+}
+.graph > div {
+  height: 100%;
+}
+.graphbar > div{
+  padding: 0 1em;
+  height: 100%;
+}
+.graph_result {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+}
+.graph .flex > div {
+  width: 100%;
+}
+.graphline {
+  border-left:1px solid #ddd;
+  height:100%;
+}
+.graphline > div > div {
+  border-top: 1px solid #ddd;
+}
+.graphline > div > div:last-child {
+  border-bottom:1px solid #ddd;
+}
+
+.flex {
+  display: flex;
+  height:100%;
+  flex-wrap: wrap;
+  align-items : stretch;
+}
+.flex > div {
+  display: flex;             
+  flex-direction: column;
+}
+.flex_center > div {
+  justify-content: center;
+}
+.flex.nowrap {
+  flex-wrap: nowrap;
+}
+.flex_bottom {
+  justify-content: space-between;
+}
+.flex_top {
+  align-self: flex-start;
+}
+.flex_bottom {
+  align-self: flex-end;
+}
 /* ============================== */
 /* Tablet Code                    */
 /*================================*/
